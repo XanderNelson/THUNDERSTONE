@@ -6,6 +6,7 @@
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
+
 h1, h3, h4, p {
    font-family: 'open sans',arial,sans-serif;
 }
@@ -14,9 +15,30 @@ html{
 }
 body{
   padding-top: 100px;
+  height:100%;
 }
 .container .navbar-brand img:hover{
   opacity:1;
+}
+/* .bg-dark {
+      background-color: rgba(255, 0, 0, 0)!important;
+} */
+
+.navbar-dark .navbar-nav .nav-link {
+  transition:500ms ease;
+  color: white;
+}
+.nav-link.scrolled{
+  color:rgba(255,255,255,.5)!important;
+}
+.bg-dark{
+  transition:500ms ease;
+  background:transparent!important;
+}
+.bg-dark.scrolled{
+  background-color:#343a40!important;
+  color:rgba(255,255,255,.5)!important;
+
 }
 .jumbotron{
   padding:0px;
@@ -25,7 +47,7 @@ body{
   background-image: url("../photos/frontPhotoTC.jpg");
   background-attachment: fixed;
   background-size:cover;
-  height: 365px;
+  height: 450px;
   color: #ffffff;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
@@ -64,7 +86,7 @@ p{
   border-radius: 0px;
   margin: 0;
   background-size:cover;
-  height: 450px;
+  height: 725px;
   color: #ffffff;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
@@ -85,7 +107,7 @@ p{
   padding-bottom: 4%;
   background-image: url("../photos/PNGsolo2.png");
   background-repeat: no-repeat;
-  /* background-attachment:fixed; */
+  background-attachment:fixed;
   /* background-size: cover; */
   background-position: center;
 
@@ -109,6 +131,28 @@ p{
 }
 .container a img:hover{
   opacity:.5;
+}
+#infoBanner{
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+  background-attachment: fixed;
+  border-radius: 0px;
+  margin: 0;
+  background-size:cover;
+  height: 450px;
+  color: #ffffff;
+}
+#infoBanner h2{
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+}
+#infoBanner p{
+  margin: 0;
+  color: #fff;
+  padding-top: 0;
 }
 /* -------------------END ALL PAGES CSS------------------------- */
 
@@ -147,26 +191,48 @@ p{
   color: #ffffff;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-#investorRelations{
+
+/* ------------------END investorRelations SPECIFIC CSS---------------------*/
+
+/* ------------------ADDRESS SPECIFIC BANNERS---------------------*/
+
+#eighthStreetDuplexJumbotron{
+  padding:0px;
   display: flex;
   align-items: center;
-  background-color: darkgrey;
-  background-attachment: fixed;
+  background-image: url("../photos/placeholder-banner.png");
   border-radius: 0px;
-  margin: 0;
-  background-size:cover;
-  height: 450px;
+
+  background-attachment: fixed;
+  background-size:contain;
+  height: 365px;
   color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-#investorRelations h2{
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  font-weight: 800;
+#eighthStreetTriplexJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/placeholder-banner.png");
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-size:contain;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-#investorRelations p{
-  margin: 0;
-  color: #fff;
-  padding-top: 0;
+#sunlightPeakJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/placeholder-banner.png");
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-size:contain;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-/* ------------------END investorRelations SPECIFIC CSS---------------------*/
+/* ------------------END ADDRESS SPECIFIC BANNERS---------------------*/
