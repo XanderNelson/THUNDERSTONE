@@ -1,0 +1,319 @@
+
+/* ------------------BEGIN ALL PAGES CSS--------------------- */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+h1, h3, h4, p {
+   font-family: 'open sans',arial,sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  padding-top: 100px;
+  height:100%;
+}
+.container .navbar-brand img:hover{
+  opacity:1;
+}
+/* .bg-dark {
+      background-color: rgba(255, 0, 0, 0)!important;
+} */
+
+.navbar-dark .navbar-nav .nav-link {
+  transition:500ms ease;
+  color: white;
+}
+.nav-link.scrolled{
+  color:rgba(255,255,255,.5)!important;
+}
+.bg-dark{
+  transition:500ms ease;
+  background:transparent!important;
+}
+.bg-dark.scrolled{
+  background-color:#343a40!important;
+  color:rgba(255,255,255,.5)!important;
+
+}
+.jumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/frontPhotoTC.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  height: 500px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+.jumbotron h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+.btn btn-primary{
+  background-color:black;
+}
+.imageLink a img:hover{
+  opacity:.7;
+  transition:.5s;
+}
+#icon h2{
+  margin:0;
+  padding: 0;
+  color: #19aee1;
+  font-size: 350%;
+  font-weight: 800;
+
+}
+#icon h3{
+  color:grey;
+  padding-top: 4%;
+  font-size:125%;
+}
+#icon img{
+  padding-top: 2%;
+  max-width: 75px;
+  -webkit-filter: drop-shadow(1px 1px 2px #222);
+  filter:drop-shadow(1px 1px 1px #222);
+}
+/* .row img{
+  padding-bottom: 4%;
+} */
+#mainPage{
+  padding-top: 5%;
+}
+h2{
+  /* font-family: "Helvetica"; */
+  color: grey;
+  padding-top:8%;
+  font-weight: 800;
+}
+p{
+  color:grey;
+}
+#textLink{
+  color:grey;
+  text-decoration: underline;
+}
+#textLink:hover{
+  color:grey;
+  text-decoration: none;
+}
+#headingBold h2{
+  font-weight: 800;
+}
+#invest{
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/sectionHouse.jpg");
+  background-attachment: fixed;
+  border-radius: 0px;
+  margin: 0;
+  background-size:cover;
+  height: 725px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+#invest h2, #invest p{
+  margin: 0;
+  color: #fff;
+  padding-top: 0;
+  font-weight: 800;
+}
+#invest p{
+  margin: 0;
+  color: #fff;
+  padding-top: 0;
+}
+#ourTeam{
+  margin: 0;
+  color: #fff;
+  padding-bottom: 4%;
+  background-image: url("../photos/PNGsolo2.png");
+  background-repeat: no-repeat;
+  background-attachment:fixed, scroll;
+  /* background-size: cover; */
+  background-position: center;
+
+}
+
+/* #ourTeam.teamScroll{
+  background-attachment:scroll;
+} */
+
+#ourTeam h2{
+  padding-top: 5%;
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+}
+#ourTeam h3{
+  font-size: 120%;
+}
+#ourTeam h4{
+  font-size: 100%;
+}
+
+#ourTeam img{
+  border-radius: 50%;
+  max-width: 200px;
+}
+/* .container a img:hover{
+  opacity:.7;
+} */
+.carousel-item{
+    max-height: 500px;
+}
+.carousel-item img{
+    max-height: 500px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+#infoBanner{
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+  background-attachment: fixed;
+  border-radius: 0px;
+  margin: 0;
+  background-size:cover;
+  height: 450px;
+  color: #ffffff;
+}
+#infoBanner h2{
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+}
+#infoBanner p{
+  margin: 0;
+  color: #fff;
+  padding-top: 0;
+}
+/* -------------------END ALL PAGES CSS------------------------- */
+
+/* -------------------construction SPECIFIC CSS------------------- */
+#constructionJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/constructionCover.jpg");
+  border-radius: 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+/* ------------------- END construction SPECIFIC CSS------------------- */
+
+/* ------------------inTheWorks SPECIFIC CSS---------------------*/
+
+#inTheWorksJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/placeholder-banner.png");
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-size:contain;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+/* ------------------END inTheWorks SPECIFIC CSS---------------------*/
+
+
+/* ------------------investorRelations SPECIFIC CSS---------------------*/
+
+#investorRelationsJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/investorRelationCover.jpg");
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-size:cover;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+/* ------------------END investorRelations SPECIFIC CSS---------------------*/
+
+/* ------------------ADDRESS SPECIFIC BANNERS---------------------*/
+
+#eighthStreetDuplexJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/duplexCover.jpg");
+  border-radius: 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+#eighthStreetTriplexJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/placeholder-banner.png");
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-size:cover;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+#sunlightPeakJumbotron{
+  padding:0px;
+  display: flex;
+  align-items: center;
+  background-image: url("../photos/sunlightPeakCover.jpg");
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-size:cover;
+  height: 365px;
+  color: #ffffff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+/* ------------------END ADDRESS SPECIFIC BANNERS---------------------*/
+/* -------------------FOR PHONE SCREENS-------------- */
+
+@media screen and (max-width: 30em)
+{
+#whoWeAre{
+    padding-top: 20%;
+  }
+  img{
+    width: 100%;
+  }
+  .jumbotron{
+    padding:0px;
+    display: flex;
+    align-items: center;
+    background-image: url("../photos/frontPhotoTC.jpg");
+    background-attachment:fixed;
+    /* background-size:cover; */
+    width:100%;
+}
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+      <link rel="stylesheet" href="CSS/thunderstoneCapitalStyle.css">
+      <!-- <script src="jquery-3.4.1.min.js"></script> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    <title>Thunderstone Capital</title>
+    </head>
+    <body>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="javaScript/thunderstoneJS.js"></script>
+      <script type="text/javascript">
+      if (window.screen.width >= 1024) {
+          $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+          });
+          $(window).scroll(function(){
+            $('a').toggleClass('scrolled', $(this).scrollTop() > 50);
+          });
+        }
+        // Need to fix this if-else- screen size
+        else{
+          $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop() >= 0);
+          });
+          $(window).scroll(function(){
+            $('a').toggleClass('scrolled', $(this).scrollTop() >= 0);
+          });
+        }
+        // $(window).scroll(function(){
+        //   $('div').toggleClass('teamScroll', $(this).scrollTop() > 2180);
+        // });
+      </script>
+
+<!-- NAVBAR BEGIN -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img style="max-width:120px;"src="photos/PNG.png" alt="ThunderstoneCapitalLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-controls="navbarNavDropDown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  REAL ESTATE
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="pagesTC/NECO.capital.com" target="blank">NECO CAPITAL</a>
+                  <a class="dropdown-item" href="pagesTC/1131_8thStreetDuplex.html">1131 8TH STREET DUPLEX</a>
+                  <!-- <a class="dropdown-item" href="pagesTC/1131_8thStreetTriplex.html">1131 8TH STREET TRIPLEX</a> -->
+                  <a class="dropdown-item" href="pagesTC/846SunlightPeak.html">846 SUNLIGHT PEAK DRIVE</a>
+                </div>
+              </li>
+
+              <!-- CONSTRUCTION SITE DROPDOWN -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  CONSTRUCTION
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="cumming.construction.com" target="blank">CUMMING CONSTRUCTION</a>
+                </div>
+              </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="pagesTC/constructionTC.html">CONSTRUCTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pagesTC/inTheWorksTC.html">CURRENT PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pagesTC/investorRelations.html">PARTNER WITH US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pagesTC/contactUs.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- NAVBAR END -->
+
+
+<!-- HEAD SECTION -->
+    <section style="  border-radius: 0px; margin-top: -100px;"class="jumbotron">
+      <div class="container">
+        <div style="padding-top:40px"class="text-center">
+          <h1>THUNDERSTONE CAPITAL</h1>
+            <a style="background-color:#19aee1; border-color:#19aee1;" class="btn btn-primary" href="#mainPage" role="button">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div style="padding-top:2%;" class="container">
+        <div class="row">
+            <div class="text-center col-sm-4" id="icon">
+              <img src="photos/portfolioIcon.png" class="img-fluid" alt="Responsive image">
+              <h3>PORTFOLIO VALUE</h3>
+              <h2>$690 K</h2>
+            </div>
+            <div class="text-center col-sm-4" id="icon">
+              <img src="photos/unitsIcon.png" class="img-fluid" alt="Responsive image">
+              <h3>UNITS</h3>
+              <h2>3</h2>
+            </div>
+            <div class="text-center col-sm-4" id="icon">
+              <img src="photos/equityIcon.png" class="img-fluid" alt="Responsive image">
+              <h3>EQUITY</h3>
+              <h2>$243 K</h2>
+            </div>
+        </div>
+      </div>
+    </section>
+<!-- HEAD SECTION END -->
+
+
+<!-- MAIN BODY -->
+      <div id="mainPage">
+        <div style="border-top:1px solid #e2e2e2"class="container">
+          <div class="text-center" id="whoWeAre">
+            <h2>WHO WE ARE</h2>
+          </div>
+          <div style="padding-top:2%; padding-bottom: 5%;" class="container">
+            <div class="row">
+              <div class="col-sm-6 my-auto">
+                <p>Three years ago, my brother Brett and I had a choice to
+                  either build our resumes or to build this company. We
+                  obviously chose the latter because you're witnessing the
+                  result. Since that decision, we have invested heavily into
+                  both human and physical capital in order to deliver a
+                  business model to investors that is capable of consistently
+                  high returns. Thunderstone Capital is that business model,
+                  and we want to share it with the ones who helped us out
+                  along the way.</p>
+                <p>--Bradley Cumming <i>CEO, CFO</i></p>
+              </div>
+              <div class="text-center col-sm-6">
+                <img style="max-width: 100%;" src="photos/holyoke1.jpg" class="img-fluid" alt="Holyoke, Photo Credit: Xander Nelson">
+                <p style="padding-top:1%;">Headquartered in Holyoke, Colorado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="invest"> <!-- there was a jumbotron class before invest -->
+          <div class="container">
+          <div class="text-center">
+            <h2>WHAT WE DO</h2>
+          </div>
+        <div style="padding-top:2%;" class="container">
+            <div class="text-center">
+              <p style="font-size: 110%;">Think of us as a mini Berkshire Hatheway.
+                We invest into businesses and projects that have large margins of
+                safety, meaning that even if our judgement in an investment is
+                wrong, we still have a probability of success. At the moment,
+                this investing philosophy along with our vertically integrated
+                business model allows us to tackle real estate and construction
+                projects with higher than average profit margins. In the future, we
+                will continue to diversify our holdings portfolio to mitigate single
+                industry risks.</p>
+          </div>
+          <div class="text-right col-sm-10">
+            <p>--Bradley Cumming <i>CEO, CFO</i></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+        <div style="background-color:darkgrey;" class="container-fluid" id="ourTeam">
+          <div class="text-center">
+            <h2>OUR TALENTED TEAM</h2>
+          </div>
+        <div class="container">
+          <div class="row">
+            <div style="padding-top:5%;" class="text-center col-sm-4">
+              <img src="photos/whitePlaceholder.jpg" alt="Bradley">
+              <h3 style="padding-top: 20px;">Bradley Cumming</h3>
+              <h4>CEO, CFO</h4>
+            </div>
+            <div style="padding-top:5%;" class="text-center col-sm-4">
+              <img src="photos/whitePlaceholder.jpg" alt="Brett">
+              <h3 style="padding-top: 20px;">Brett Cumming</h3>
+              <h4>COO</h4>
+            </div>
+            <div style="padding-top:5%;" class="text-center col-sm-4">
+              <img src="photos/whitePlaceholder.jpg" alt="Oscar">
+              <h3 style="padding-top: 20px;">Oscar Hernandez</h3>
+              <h4>Investor Relations Manager</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div style="padding-top:5%;" class="text-center col-sm-6">
+                <img src="photos/xander.jpg" alt="Xander">
+                <h3 style="padding-top: 20px;">Xander Nelson</h3>
+                <h4>Lead Designer and Developer</h4>
+            </div>
+            <div style="padding-top:5%;" class="text-center col-sm-6">
+                <img src="photos/Baby_Guinness.jpg" alt="Guinness">
+                <h3 style="padding-top: 20px;">Guinness</h3>
+                <h4>Mascot</h4>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+<!-- MAIN BODY END -->
+
+
+<!-- FOOTER -->
+      <!-- <div style="  background-color:  #001f33;"class="container-fluid"> -->
+      <div style="  background-color:#062f3d;"class="container-fluid">
+        <div style="font-size: 75%; padding-top:2%; padding-bottom:2%; line-height:2;" class="container">
+          <p style="margin:0;">Thunderstone has provided the information contained on this
+            website for information purposes only and makes no legal representation or warranty
+            as to the completeness or accuracy of any such information and content and the content
+            may be changed, updated, modified, amended or deleted from time to time, at any time
+            and without notice. The information does not constitute an offer to sell or a solicitation
+            to buy or otherwise deal in the securities of any company or other legal entity.</p>
+          </div>
+      </div>
+      <footer style="  background-color:#343a40!important;"class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <span style="font-size:75%;" class="align-middle"><p class="navbar-nav ml-auto">© Thunderstone Capital - All Rights Reserved</p></span>
+          </a>
+          <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="pagesTC/contactUs.html">Contact</a>
+          </ul>
+        </div>
+      </footer>
+    </body>
+</html>
